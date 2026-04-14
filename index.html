@@ -238,6 +238,16 @@ body{background:var(--bg);color:var(--t);font-family:'Barlow',sans-serif;font-si
   .login-card{padding:28px 18px}
   .info-grid{grid-template-columns:1fr 1fr}
 }
+
+/* DONATE */
+.donate-card{display:flex;align-items:center;gap:14px;margin-top:10px;padding:15px 16px;background:linear-gradient(135deg,#16110a,#1c1608);border:1px solid rgba(253,186,64,.15);border-radius:var(--rr);text-decoration:none;transition:all .2s;-webkit-tap-highlight-color:transparent}
+.donate-card:hover,.donate-card:active{border-color:rgba(253,186,64,.35);background:linear-gradient(135deg,#1e1509,#231c08)}
+.donate-icon{font-size:26px;flex-shrink:0}
+.donate-txt{flex:1;min-width:0}
+.donate-title{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:#fcd34d;letter-spacing:.02em}
+.donate-sub{font-size:12px;color:#8a6a35;margin-top:2px;line-height:1.4}
+.donate-arrow{font-size:18px;color:#8a6a35;flex-shrink:0;transition:transform .2s}
+.donate-card:hover .donate-arrow{transform:translateX(3px)}
 </style>
 </head>
 <body>
@@ -314,6 +324,15 @@ body{background:var(--bg);color:var(--t);font-family:'Barlow',sans-serif;font-si
       <button class="btn" style="padding:10px 18px;font-size:15px" onclick="showCreate()">＋ Nieuw</button>
     </div>
     <div id="t-list"><div style="text-align:center;padding:32px"><div class="spinner"></div></div></div>
+
+    <a href="https://buymeacoffee.com/paullijten" target="_blank" rel="noopener" class="donate-card">
+      <div class="donate-icon">&#9749;</div>
+      <div class="donate-txt">
+        <div class="donate-title">Buy me a coffee</div>
+        <div class="donate-sub">Vind je TourneyPro handig? Een kleine bijdrage helpt enorm &#128591;</div>
+      </div>
+      <div class="donate-arrow">&#8594;</div>
+    </a>
   </div>
   <div id="ht-r" class="content" style="display:none">
     <div class="slbl" style="margin-bottom:12px">Totale ranglijst · alle toernooien</div>
